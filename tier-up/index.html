@@ -917,6 +917,30 @@
             color: #58a6ff;
         }
 
+        .earth-tour-link {
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        .tour-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #1f6feb 0%, #58a6ff 100%);
+            color: white;
+            padding: 14px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(31, 111, 235, 0.3);
+        }
+
+        .tour-btn:hover {
+            background: linear-gradient(135deg, #58a6ff 0%, #79c0ff 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(31, 111, 235, 0.4);
+        }
+
         /* Light mode overrides for reference section */
         @media (prefers-color-scheme: light) {
             .ref-subtabs {
@@ -1061,6 +1085,16 @@
 
             .dest-info-box strong {
                 color: #0969da;
+            }
+
+            .tour-btn {
+                background: linear-gradient(135deg, #0969da 0%, #0550ae 100%);
+                box-shadow: 0 4px 12px rgba(9, 105, 218, 0.3);
+            }
+
+            .tour-btn:hover {
+                background: linear-gradient(135deg, #0550ae 0%, #033d8b 100%);
+                box-shadow: 0 6px 16px rgba(9, 105, 218, 0.4);
             }
         }
     </style>
@@ -1629,6 +1663,12 @@
             <div id="destination-prices" class="ref-subtab-content">
                 <h2 class="ref-title">Dream Vacations</h2>
                 <p class="ref-subtitle">Weekly costs of popular dream vacation destinations</p>
+
+                <div class="earth-tour-link">
+                    <a href="http://drive.google.com/open?id=1mh4j8j5SDbW10FXVxoaDMaU1FTBMK-4t&usp=sharing_eip&ts=69d01ed3" target="_blank" class="tour-btn">
+                        🌍 View Dream Destinations in Google Earth
+                    </a>
+                </div>
 
                 <div class="destination-table-container">
                     <table class="destination-table" id="destinationTable">
