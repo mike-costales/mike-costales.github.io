@@ -1097,6 +1097,287 @@
                 box-shadow: 0 6px 16px rgba(9, 105, 218, 0.4);
             }
         }
+
+        /* Flashcard Styles */
+        .flashcard-section {
+            margin-top: 32px;
+            padding-top: 32px;
+            border-top: 2px solid #30363d;
+        }
+
+        .flashcard-header {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #58a6ff;
+            margin-bottom: 16px;
+        }
+
+        .flashcard-stats {
+            background: rgba(22,27,34,0.6);
+            border: 1px solid #30363d;
+            border-radius: 10px;
+            padding: 12px 18px;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .flashcard-stats-text {
+            font-size: 0.9rem;
+            color: #c9d1d9;
+        }
+
+        .flashcard-progress-wrap {
+            background: #21262d;
+            border-radius: 4px;
+            height: 5px;
+            margin-bottom: 18px;
+            overflow: hidden;
+        }
+
+        .flashcard-progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #1f6feb, #58a6ff);
+            border-radius: 4px;
+            transition: width 0.4s ease;
+        }
+
+        .flashcard-wrap {
+            background: rgba(22,27,34,0.7);
+            border: 1px solid #30363d;
+            border-radius: 14px;
+            margin-bottom: 14px;
+            overflow: hidden;
+        }
+
+        .flashcard-front {
+            padding: 40px 32px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .flashcard-label {
+            font-size: 0.72rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #8b949e;
+            margin-bottom: 12px;
+        }
+
+        .flashcard-credits {
+            font-size: clamp(2.8rem, 8vw, 4rem);
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: -0.03em;
+            line-height: 1;
+        }
+
+        .flashcard-unit {
+            font-size: 1rem;
+            color: #58a6ff;
+            font-weight: 600;
+            margin-top: 8px;
+        }
+
+        .flashcard-tap-hint {
+            margin-top: 20px;
+            font-size: 0.78rem;
+            color: #6e7681;
+        }
+
+        .flashcard-back {
+            display: none;
+            padding: 20px 24px;
+        }
+
+        .flashcard-back.show {
+            display: block;
+        }
+
+        .flashcard-back-header {
+            font-size: 0.72rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #8b949e;
+            margin-bottom: 14px;
+            text-align: center;
+        }
+
+        .flashcard-data-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 10px;
+        }
+
+        .flashcard-data-cell {
+            background: rgba(13,17,23,0.5);
+            border: 1px solid #21262d;
+            border-radius: 8px;
+            padding: 12px 14px;
+            text-align: center;
+        }
+
+        .flashcard-cell-label {
+            font-size: 0.68rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: #8b949e;
+            margin-bottom: 4px;
+        }
+
+        .flashcard-cell-value {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        .flashcard-cell-value.highlight {
+            color: #58a6ff;
+        }
+
+        .flashcard-cell-value.green {
+            color: #3fb950;
+        }
+
+        .flashcard-cell-value.muted {
+            color: #6e7681;
+            font-size: 0.9rem;
+            font-style: italic;
+            font-weight: 400;
+        }
+
+        .flashcard-controls {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .flashcard-btn-flip {
+            background: rgba(31,111,235,0.15);
+            border: 2px solid #1f6feb;
+            color: #58a6ff;
+            border-radius: 8px;
+            padding: 13px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            font-family: 'Inter', sans-serif;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.15s ease;
+        }
+
+        .flashcard-btn-flip:hover {
+            background: rgba(31,111,235,0.25);
+        }
+
+        .flashcard-rating-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .flashcard-rating-btn {
+            padding: 13px 12px;
+            font-size: 0.9rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            font-family: 'Inter', sans-serif;
+            transition: all 0.15s ease;
+            border: 2px solid transparent;
+        }
+
+        .flashcard-btn-correct {
+            background: rgba(46,160,67,0.15);
+            border-color: #2ea043;
+            color: #3fb950;
+        }
+
+        .flashcard-btn-correct:hover {
+            background: rgba(46,160,67,0.25);
+        }
+
+        .flashcard-btn-missed {
+            background: rgba(218,54,51,0.1);
+            border-color: #da3633;
+            color: #f85149;
+        }
+
+        .flashcard-btn-missed:hover {
+            background: rgba(218,54,51,0.2);
+        }
+
+        .flashcard-hidden {
+            display: none !important;
+        }
+
+        .flashcard-completion {
+            background: rgba(22,27,34,0.6);
+            border: 1px solid #30363d;
+            border-radius: 14px;
+            padding: 48px 32px;
+            text-align: center;
+        }
+
+        .flashcard-completion-emoji {
+            font-size: 2.5rem;
+            margin-bottom: 12px;
+        }
+
+        .flashcard-completion-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 6px;
+        }
+
+        .flashcard-completion-sub {
+            color: #8b949e;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+        }
+
+        .flashcard-score-big {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #58a6ff;
+        }
+
+        .flashcard-score-label {
+            color: #8b949e;
+            font-size: 0.9rem;
+            margin-bottom: 24px;
+        }
+
+        .flashcard-btn-restart {
+            background: #1f6feb;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 13px 32px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            font-family: 'Inter', sans-serif;
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+
+        .flashcard-btn-restart:hover {
+            background: #388bfd;
+        }
+
+        @media (max-width: 600px) {
+            .flashcard-data-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .flashcard-cell-value {
+                font-size: 1rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -1495,6 +1776,7 @@
         <div id="reference-tab" class="tab-content">
             <div class="ref-subtabs">
                 <button class="ref-subtab-btn active" onclick="switchRefTab('acronyms')">Acronyms</button>
+                <button class="ref-subtab-btn" onclick="switchRefTab('credit-matrix')">Credit Matrix</button>
                 <button class="ref-subtab-btn" onclick="switchRefTab('destination-prices')">Dream Vacations</button>
             </div>
 
@@ -1660,15 +1942,138 @@
                 </div>
             </div>
 
+            <div id="credit-matrix" class="ref-subtab-content">
+                <h2 class="ref-title">Credit Package Matrix</h2>
+                <p class="ref-subtitle">WorldMark credit packages with pricing breakdown</p>
+
+                <div class="destination-table-container">
+                    <table class="destination-table">
+                        <thead>
+                            <tr>
+                                <th>Credits</th>
+                                <th>Retail Price (@$4.50/cr)</th>
+                                <th>10% Down</th>
+                                <th>20% Down</th>
+                                <th>Monthly Dues</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="dest-name">5,000</td>
+                                <td class="dest-price">$22,500</td>
+                                <td class="dest-price">$2,250</td>
+                                <td class="dest-price">$4,500</td>
+                                <td class="dest-price">$74/mo</td>
+                            </tr>
+                            <tr>
+                                <td class="dest-name">8,000</td>
+                                <td class="dest-price">$36,000</td>
+                                <td class="dest-price">$3,600</td>
+                                <td class="dest-price">$7,200</td>
+                                <td class="dest-price">$120/mo</td>
+                            </tr>
+                            <tr>
+                                <td class="dest-name">10,000</td>
+                                <td class="dest-price">$45,000</td>
+                                <td class="dest-price">$4,500</td>
+                                <td class="dest-price">$9,000</td>
+                                <td class="dest-price">$120/mo</td>
+                            </tr>
+                            <tr>
+                                <td class="dest-name">15,000</td>
+                                <td class="dest-price">$67,500</td>
+                                <td class="dest-price">$6,750</td>
+                                <td class="dest-price">$13,500</td>
+                                <td class="dest-price">$165/mo</td>
+                            </tr>
+                            <tr>
+                                <td class="dest-name">20,000</td>
+                                <td class="dest-price">$90,000</td>
+                                <td class="dest-price">$9,000</td>
+                                <td class="dest-price">$18,000</td>
+                                <td class="dest-price">$210/mo</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="dest-info-box">
+                    <strong>💡 Quick Reference:</strong> Retail price is calculated at $4.50 per credit. Down payment options shown at 10% and 20%. Monthly dues are maintenance fees per credit package tier.
+                </div>
+
+                <!-- Flashcard Practice Section -->
+                <div class="flashcard-section">
+                    <h3 class="flashcard-header">🎴 Practice Flash Cards</h3>
+                    
+                    <div class="flashcard-stats">
+                        <span class="flashcard-stats-text">
+                            ✅ <span class="stats-number" id="fc-score-correct">0</span> &nbsp;·&nbsp;
+                            ❌ <span class="stats-number" id="fc-score-missed">0</span> &nbsp;·&nbsp;
+                            Card <span class="stats-number" id="fc-card-num">1</span> / <span class="stats-number" id="fc-card-total">5</span>
+                        </span>
+                    </div>
+                    
+                    <div class="flashcard-progress-wrap">
+                        <div class="flashcard-progress-fill" id="fc-progress-fill" style="width:0%"></div>
+                    </div>
+                    
+                    <div id="fc-main-view">
+                        <div class="flashcard-wrap">
+                            <div class="flashcard-front" id="fc-card-front" onclick="flipFlashcard()">
+                                <div class="flashcard-label">Credit Package</div>
+                                <div class="flashcard-credits" id="fc-front-credits"></div>
+                                <div class="flashcard-unit">Credits</div>
+                                <div class="flashcard-tap-hint">↩ Tap to reveal pricing</div>
+                            </div>
+                            <div class="flashcard-back" id="fc-card-back">
+                                <div class="flashcard-back-header" id="fc-back-header"></div>
+                                <div class="flashcard-data-grid">
+                                    <div class="flashcard-data-cell">
+                                        <div class="flashcard-cell-label">Retail Price</div>
+                                        <div class="flashcard-cell-value highlight" id="fc-back-retail"></div>
+                                    </div>
+                                    <div class="flashcard-data-cell">
+                                        <div class="flashcard-cell-label">10% Down</div>
+                                        <div class="flashcard-cell-value" id="fc-back-10"></div>
+                                    </div>
+                                    <div class="flashcard-data-cell">
+                                        <div class="flashcard-cell-label">20% Down</div>
+                                        <div class="flashcard-cell-value" id="fc-back-20"></div>
+                                    </div>
+                                    <div class="flashcard-data-cell">
+                                        <div class="flashcard-cell-label">Maint. Fee/yr</div>
+                                        <div class="flashcard-cell-value" id="fc-back-maint"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flashcard-controls" id="fc-controls-before-flip">
+                            <button class="flashcard-btn-flip" onclick="flipFlashcard()">↩ Reveal Pricing</button>
+                        </div>
+                        <div class="flashcard-controls flashcard-hidden" id="fc-controls-after-flip">
+                            <div class="flashcard-rating-row">
+                                <button class="flashcard-rating-btn flashcard-btn-correct" onclick="rateFlashcard(true)">✅ Got It</button>
+                                <button class="flashcard-rating-btn flashcard-btn-missed" onclick="rateFlashcard(false)">❌ Missed It</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="fc-completion-view" class="flashcard-hidden">
+                        <div class="flashcard-completion">
+                            <div class="flashcard-completion-emoji">🎯</div>
+                            <div class="flashcard-completion-title">Deck Complete!</div>
+                            <div class="flashcard-completion-sub">Here's how you did:</div>
+                            <div class="flashcard-score-big" id="fc-final-score"></div>
+                            <div class="flashcard-score-label" id="fc-final-label"></div>
+                            <button class="flashcard-btn-restart" onclick="restartFlashcards()">🔄 Shuffle & Restart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div id="destination-prices" class="ref-subtab-content">
                 <h2 class="ref-title">Dream Vacations</h2>
                 <p class="ref-subtitle">Weekly costs of popular dream vacation destinations</p>
-
-                <div class="earth-tour-link">
-                    <a href="http://drive.google.com/open?id=1mh4j8j5SDbW10FXVxoaDMaU1FTBMK-4t&usp=sharing_eip&ts=69d01ed3" target="_blank" class="tour-btn">
-                        🌍 View Dream Destinations in Google Earth
-                    </a>
-                </div>
 
                 <div class="destination-table-container">
                     <table class="destination-table" id="destinationTable">
@@ -2435,6 +2840,153 @@
 
         // ── INIT ─────────────────────────────────────────────────────
         // Quizzes will be initialized when their tabs are clicked
+
+        // ── FLASHCARD FUNCTIONS ──────────────────────────────────────
+        var fcPackages = [
+            { credits: 5000,  retail: 22500, down10: 2250, down20: 4500,  maint: 74   },
+            { credits: 8000,  retail: 36000, down10: 3600, down20: 7200,  maint: 120  },
+            { credits: 10000, retail: 45000, down10: 4500, down20: 9000,  maint: 120  },
+            { credits: 15000, retail: 67500, down10: 6750, down20: 13500, maint: 165  },
+            { credits: 20000, retail: 90000, down10: 9000, down20: 18000, maint: 210  }
+        ];
+        
+        function fcFmt(n) { return '$' + n.toLocaleString('en-US'); }
+        
+        function fcShuffle(arr) {
+            var a = arr.slice();
+            for (var i = a.length - 1; i > 0; i--) {
+                var j = Math.floor(Math.random() * (i + 1));
+                var tmp = a[i]; a[i] = a[j]; a[j] = tmp;
+            }
+            return a;
+        }
+        
+        var fcDeck = fcShuffle(fcPackages.map(function(_, i){ return i; }));
+        var fcDeckPos = 0, fcScoreCorrect = 0, fcScoreMissed = 0;
+        var fcInitialized = false;
+
+        function loadFlashcard() {
+            if (!fcInitialized) {
+                fcInitialized = true;
+            }
+            var pkg = fcPackages[fcDeck[fcDeckPos]];
+            var frontEl = document.getElementById('fc-card-front');
+            var backEl = document.getElementById('fc-card-back');
+            var beforeFlipEl = document.getElementById('fc-controls-before-flip');
+            var afterFlipEl = document.getElementById('fc-controls-after-flip');
+            
+            if (frontEl) frontEl.style.display = 'block';
+            if (backEl) backEl.classList.remove('show');
+            if (beforeFlipEl) beforeFlipEl.classList.remove('flashcard-hidden');
+            if (afterFlipEl) afterFlipEl.classList.add('flashcard-hidden');
+            
+            var creditsEl = document.getElementById('fc-front-credits');
+            if (creditsEl) creditsEl.textContent = pkg.credits.toLocaleString('en-US');
+            
+            var headerEl = document.getElementById('fc-back-header');
+            if (headerEl) headerEl.textContent = pkg.credits.toLocaleString('en-US') + ' Credits';
+            
+            var retailEl = document.getElementById('fc-back-retail');
+            if (retailEl) retailEl.textContent = fcFmt(pkg.retail);
+            
+            var down10El = document.getElementById('fc-back-10');
+            if (down10El) down10El.textContent = fcFmt(pkg.down10);
+            
+            var down20El = document.getElementById('fc-back-20');
+            if (down20El) down20El.textContent = fcFmt(pkg.down20);
+            
+            var maintEl = document.getElementById('fc-back-maint');
+            if (maintEl) {
+                maintEl.textContent = fcFmt(pkg.maint) + '/mo';
+                maintEl.className = 'flashcard-cell-value green';
+            }
+            
+            var cardNumEl = document.getElementById('fc-card-num');
+            if (cardNumEl) cardNumEl.textContent = fcDeckPos + 1;
+            
+            var cardTotalEl = document.getElementById('fc-card-total');
+            if (cardTotalEl) cardTotalEl.textContent = fcDeck.length;
+            
+            var correctEl = document.getElementById('fc-score-correct');
+            if (correctEl) correctEl.textContent = fcScoreCorrect;
+            
+            var missedEl = document.getElementById('fc-score-missed');
+            if (missedEl) missedEl.textContent = fcScoreMissed;
+            
+            var progressEl = document.getElementById('fc-progress-fill');
+            if (progressEl) progressEl.style.width = ((fcDeckPos / fcDeck.length) * 100) + '%';
+        }
+
+        function flipFlashcard() {
+            var frontEl = document.getElementById('fc-card-front');
+            var backEl = document.getElementById('fc-card-back');
+            var beforeFlipEl = document.getElementById('fc-controls-before-flip');
+            var afterFlipEl = document.getElementById('fc-controls-after-flip');
+            
+            if (frontEl) frontEl.style.display = 'none';
+            if (backEl) backEl.classList.add('show');
+            if (beforeFlipEl) beforeFlipEl.classList.add('flashcard-hidden');
+            if (afterFlipEl) afterFlipEl.classList.remove('flashcard-hidden');
+        }
+
+        function rateFlashcard(correct) {
+            if (correct) { fcScoreCorrect++; } else { fcScoreMissed++; }
+            fcDeckPos++;
+            if (fcDeckPos >= fcDeck.length) { 
+                showFlashcardCompletion(); 
+            } else { 
+                loadFlashcard(); 
+            }
+        }
+
+        function showFlashcardCompletion() {
+            var mainViewEl = document.getElementById('fc-main-view');
+            var completionEl = document.getElementById('fc-completion-view');
+            
+            if (mainViewEl) mainViewEl.classList.add('flashcard-hidden');
+            if (completionEl) completionEl.classList.remove('flashcard-hidden');
+            
+            var pct = Math.round((fcScoreCorrect / fcDeck.length) * 100);
+            
+            var scoreEl = document.getElementById('fc-final-score');
+            if (scoreEl) scoreEl.textContent = fcScoreCorrect + ' / ' + fcDeck.length;
+            
+            var labelEl = document.getElementById('fc-final-label');
+            if (labelEl) {
+                labelEl.textContent = pct + '% — ' + (
+                    pct === 100 ? 'Perfect! 🔥' :
+                    pct >= 75  ? 'Strong work 💪' :
+                    pct >= 50  ? 'Keep drilling 📚' : 'Review the matrix and go again'
+                );
+            }
+            
+            var progressEl = document.getElementById('fc-progress-fill');
+            if (progressEl) progressEl.style.width = '100%';
+        }
+
+        function restartFlashcards() {
+            fcDeck = fcShuffle(fcPackages.map(function(_, i){ return i; }));
+            fcDeckPos = 0;
+            fcScoreCorrect = 0;
+            fcScoreMissed = 0;
+            
+            var completionEl = document.getElementById('fc-completion-view');
+            var mainViewEl = document.getElementById('fc-main-view');
+            
+            if (completionEl) completionEl.classList.add('flashcard-hidden');
+            if (mainViewEl) mainViewEl.classList.remove('flashcard-hidden');
+            
+            loadFlashcard();
+        }
+
+        // Initialize flashcards when Credit Matrix tab is viewed
+        var originalSwitchRefTab = switchRefTab;
+        switchRefTab = function(subtab) {
+            originalSwitchRefTab(subtab);
+            if (subtab === 'credit-matrix' && !fcInitialized) {
+                loadFlashcard();
+            }
+        };
     </script>
 </body>
 </html>
